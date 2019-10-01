@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class CodeUp_1087 {
+public class CodeUp_1088 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -12,15 +12,13 @@ public class CodeUp_1087 {
 				
 		int num1 = sc.nextInt();
 		int cnt = 0;
-		int result = 0;
 		
-		while(true) {
-			cnt++;
-			result += cnt;
-			if(result >= num1) {
-				System.out.println(result);
-				return;
-			}
+		for(int i = 1; i <= num1; i++) {
+			
+			if(i % 3 == 0)
+				continue;
+			
+			System.out.print(i + " ");
 		}
 	}
 
