@@ -1,3 +1,4 @@
+package CodeUp;
 
 public class CodeUp_1002 {
 

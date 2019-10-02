@@ -5,27 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class CodeUp_1077 {
+public class CodeUp_1090 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 
+		int a = sc.nextInt();
+		int d = sc.nextInt();
+		int n = sc.nextInt();
 
-		int num = sc.nextInt();
-		int result = 0;
-		
-		while(true) {
-			
-			System.out.println(result);
-			
-			if(num == result) {
-				return;
-			}
-			
-			result++;
+		int result = a;
+		for(int i = 1; i < n; i++) {
+			result *= d;
 		}
 		
-	}
+		System.out.println(result);
 
+	}
 }
